@@ -6,18 +6,27 @@
 <body>
     <h2 style="text-align: center; color:violet">Andrea my lovey girl, will you be my valentine?</h2>
     <img src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG1hcmFmYWM4dnI1bjY0NDdiZXE2bjd6ZG14c256NW50cnJsZGg5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Pk9n41p2yA7CFGJg60/giphy.gif" alt = "fcatgift" class="center" style="width: 35vh; height: 35vh;"></body><br>   
-    <button id="yesbutton" class="center">yes</button> 
-    <button id="nobutton" class="center">no</button>
+    <button id="yesbutton" class="center" style="width: 15vh; height: 15vh;">yes</button> 
+    <button id="nobutton" class="center" style="width: 15vh; height: 15vh;" >no</button>
     <script>
         let nob = document.getElementById("nobutton")
+        let yesb = document.getElementById("yesbutton")
         let i = 1
+        let j = 1
         nob.addEventListener("click", function(){
             i += 25;
-            nob.style.width =  parseFloat(window.getComputedStyle(nob).width) + i + "px";
-            nob.style.height = parseFloat(window.getComputedStyle(nob).height) + i + "px";
+            yesb.style.width =  parseFloat(window.getComputedStyle(nob).width) + i + "px";
+            yesb.style.height = parseFloat(window.getComputedStyle(nob).height) + i + "px";
+            if (j == 1){
+                nob.innerText = "pls?"
+            }else if (j == 2){
+                nob.innerText = "dawg...pls..?"
+            } else{
+                nob.innerText = "be so fkn fr andrea just say yes."
+            }
+            j++
         }
     );
-    let yesb = document.getElementById("yesbutton")
       yesb.addEventListener("click", function(){
             window.location.href="yes.html";
         }
