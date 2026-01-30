@@ -1,1 +1,5 @@
 .center {display: block; margin-left: auto; margin-right: auto;}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.google-cursive {
+        font-family: 'Dancing Script', cursive;
+    }
